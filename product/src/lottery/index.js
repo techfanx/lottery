@@ -325,6 +325,10 @@ function createCard(user, isBold, id, showTable) {
   var element = createElement();
   element.id = "card-" + id;
 
+  element.style.backgroundImage = 'url("../img/六一照片/' + user[2] + '/' + user[1] + '.jpg")';
+  element.style.backgroundPosition = 'center center';
+  element.style.backgroundSize = '100% auto';
+  element.style.backgroundRepeat = 'no-repeat';
   if (isBold) {
     element.className = "element lightitem";
     if (showTable) {
@@ -336,11 +340,11 @@ function createCard(user, isBold, id, showTable) {
       "rgba(0,127,127," + (Math.random() * 0.7 + 0.25) + ")";
   }
   //添加公司标识
-  element.appendChild(createElement("company", COMPANY));
+  // element.appendChild(createElement("company", COMPANY));
 
   element.appendChild(createElement("name", user[1]));
 
-  element.appendChild(createElement("details", user[0] + "<br/>" + user[2]));
+  // element.appendChild(createElement("details", user[0] + "<br/>" + user[2]));
   return element;
 }
 
@@ -677,9 +681,9 @@ function random(num) {
 function changeCard(cardIndex, user) {
   let card = threeDCards[cardIndex].element;
 
-  card.innerHTML = `<div class="company">${COMPANY}</div><div class="name">${
-    user[1]
-  }</div><div class="details">${user[0]}<br/>${user[2] || "PSST"}</div>`;
+  // card.innerHTML = `<div class="company">${COMPANY}</div><div class="name">${
+  //   user[1]
+  // }</div><div class="details">${user[0]}<br/>${user[2] || "PSST"}</div>`;
 }
 
 /**

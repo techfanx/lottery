@@ -9,70 +9,70 @@
 const prizes = [
   {
     type: 0,
-    count: 1000,
+    count: 1,
     title: "",
     text: "特别奖"
   },
-  {
-    type: 1,
-    count: 2,
-    text: "特等奖",
-    title: "神秘大礼",
-    img: "../img/secrit.jpg"
-  },
+  // {
+  //   type: 1,
+  //   count: 2,
+  //   text: "特等奖",
+  //   title: "神秘大礼",
+  //   img: "../img/secrit.jpg"
+  // },
   {
     type: 2,
-    count: 5,
+    count: 1,
     text: "一等奖",
-    title: "Mac Pro",
-    img: "../img/mbp.jpg"
+    title: "电动摩托车",
+    img: "../img/motuoche.jpg"
   },
   {
     type: 3,
-    count: 6,
+    count: 3,
     text: "二等奖",
-    title: "华为 Mate30",
-    img: "../img/huawei.png"
+    title: "格兰仕微波炉",
+    img: "../img/weibolu.jpg"
   },
   {
     type: 4,
-    count: 7,
+    count: 8,
     text: "三等奖",
-    title: "Ipad Mini5",
-    img: "../img/ipad.jpg"
+    title: "拉杆箱",
+    img: "../img/laganxiang.jpg"
   },
   {
     type: 5,
-    count: 8,
-    text: "四等奖",
-    title: "大疆无人机",
-    img: "../img/spark.jpg"
+    count: 12,
+    text: "幸运奖",
+    title: "儿童全棉夏凉被",
+    img: "../img/mianbei.jpg"
   },
-  {
-    type: 6,
-    count: 8,
-    text: "五等奖",
-    title: "Kindle",
-    img: "../img/kindle.jpg"
-  },
-  {
-    type: 7,
-    count: 11,
-    text: "六等奖",
-    title: "漫步者蓝牙耳机",
-    img: "../img/edifier.jpg"
-  }
+  // {
+  //   type: 6,
+  //   count: 8,
+  //   text: "五等奖",
+  //   title: "Kindle",
+  //   img: "../img/kindle.jpg"
+  // },
+  // {
+  //   type: 7,
+  //   count: 11,
+  //   text: "六等奖",
+  //   title: "漫步者蓝牙耳机",
+  //   img: "../img/edifier.jpg"
+  // }
 ];
 
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [1, 1, 5, 6, 7, 8, 9, 10];
+const EACH_COUNT = [1, 1, 3, 8, 12, 8, 9, 10];
 
 /**
  * 卡片公司名称标识
  */
-const COMPANY = "MoShang";
+const COMPANY = "竹蜻蜓";
 
 module.exports = {
   prizes,
